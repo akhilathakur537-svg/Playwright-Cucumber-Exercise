@@ -9,4 +9,4 @@ Feature: Login Feature
 
   Scenario: Validate login error message
     Then I will login as 'locked_out_user'
-    # TODO: Add a step to validate the error message received
+    Then I should see the error message "entered username and password doesn't match"
